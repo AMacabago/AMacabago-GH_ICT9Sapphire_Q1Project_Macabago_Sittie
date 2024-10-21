@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Pearlshoppe Goldsmith | Products </title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@400&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: white;
+			background-size: cover;
+			text-align: center;
+			color: black;
+		body, html {
+			height: 100%;
+		}
+		
+		
+		.header{
+			padding: 5px;
+  			text-align: center;
+  			background: black;
+  			color: white;
+  			font-size: 25px;
+  			
+		}
+		
+		.gs {
+			color: gold;
+			font-family: "Dancing Script", cursive;
+  			font-optical-sizing: auto;
+  			font-weight: <weight>;
+  			font-style: normal;
+		}
+		.logo {
+			text-align: right;
+			direction: inline;
+		}
+		.header {
+		overflow: hidden;
+		background-color: black;
+		padding: 20px 10px;
+		margin-bottom: 5px;
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		}
+
+		.header a:hover {
+  		background-color: gold;
+  		color: white;
+  		margin: 5px;
+		}		
+		.header a.active {
+  		color: white;
+		}
+		.header-right {
+  		float: right;
+		}
+		.header a {
+  		float: left;
+  		color: white;
+		text-align: center;
+		padding: 12px;
+		text-decoration: none;
+		font-size: 18px;
+		line-height: 25px;
+		border-radius: 4px;
+		}
+		.header a.logo {
+		  font-size: 30px;
+		  font-weight: bold;
+		}
+		
+		
+		.header a.gs {
+			color: gold;
+			font-family: "Dancing Script", cursive;
+  			font-optical-sizing: auto;
+  			font-size: 35px;
+  			font-style: normal;
+  			color: gold;
+  		}
+  		.container {
+			display: flex;
+			height: 100vh;
+		}
+  		.image-half {
+			 flex: 1; /* Takes half of the container */
+    	background-image: url(https://t4.ftcdn.net/jpg/03/15/75/73/360_F_315757330_Zkush37QibcEPWsmqZaEed67sO1lNrJm.jpg);  /* Cover the entire area */
+    	background-position: center; /* Center the image */
+		}
+		fieldset {
+    margin: 0; /* Reset fieldset margin */
+    padding: 0; /* Reset fieldset padding */
+	}
+		.overlay {
+		position: absolute; /* Positioning the text absolutely */
+		top: 0; /* Align to the top */
+		left: 0; /* Align to the left */
+		width: 100%; /* Full width of the container */
+		height: 100%; /* Full height of the container */
+		background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+		color: white; /* Text color */
+		display: flex; /* Use flexbox for centering */
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically */
+		opacity: 0; /* Initially hidden */
+		transition: opacity 0.5s ease; /* Smooth transition for opacity */
+		font-size: 50px;
+		}
+
+		
+  		.pearl {
+  			border-radius: 30px;
+  			background-color: #1c1c1a;
+  			padding: 20px;
+		.prl {
+		  	font-family: "Playfair Display", serif;
+		  	font-optical-sizing: auto;
+		  	font-weight: 100%;
+		  	font-style: normal;
+		  		}
+
+  		
+  		}
+  		.brooch:hover{
+  			background-color: white;
+  		color: white;
+  		}
+  		.image-container {
+    		display: flex;
+			gap: 20px; /* Space between images */
+			width: 350px;
+  			height: 400px;
+  			direction: inline;
+  			text-align: center;
+  			padding: 10px;
+		}	
+		.image-container:hover .overlay {
+				    opacity: 1; /* Show overlay on hover */
+				}
+		.zoom {
+		    width: 150px; /* Set a width for the images */
+		    height: auto; /* Maintain aspect ratio */
+		    transition: transform 0.3s ease; /* Smooth transition */
+		    border: 2px solid pink;
+		}
+
+		.zoom:hover {
+		    transform: scale(1.1); /* Scale image on hover */
+		}
+		.footer {
+			background-color: black;
+			padding: 20px;
+			}
+		.srv {
+			text-align: center;
+			direction: inline;
+			font-family: "Playfair Display", serif;
+		  	font-optical-sizing: auto;
+		  	font-weight: 100%;
+		  	font-style: normal;
+		  	font-size: 20px;
+		  font-weight: bold;
+		  color: pink;
+
+		}
+		.service-list {
+			color: white
+		}
+		
+  		
+	</style>
+</head>
+<body>
+
+	<div class="header">
+			<a href="#default" class="logo">Pearlshoppe</a>
+			<a href="#default" class="gs">Goldsmith</a>
+  		<div class="header-right">
+    		<a class="active" href="#home">Home</a>
+    		<a class="products" href="#products">Products</a>
+    		<a class="signin" href="#services">Services</a>
+    		<a href="file:///Users/sittieainah/Documents/ICT%202425/EXAMPLES/cart/index.html#default">
+    			<img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5559842.jpg" alt="shopping cart" style="width: 30px; height: 30px" class="cartt">
+    		</a>
+    	</div>
+	</div>
+<div class="container">
+	<div class="image-half" id="home"></div>
+	
+</div>
+
+<div class="image-container">
+        <div class="overlay"><em>Sparkle with Elegance</em></div>
+    </div>
+
+<fieldset class="pearl" id="products">
+	<h1 class="prl" style="color:white;">PEARL SECTION</h1>
+	<br>
+	<div class="image-container">		
+
+		<img src="https://m.media-amazon.com/images/I/61LxJEioVSL._AC_UY1000_.jpg" style="width: 300px; height: 400px;" alt="brooch" class="zoom">
+	
+		<img src="https://www.akunapearls.com.au/cdn/shop/products/Tora_2_1600x.jpg?v=1661778566" style="width: 300px; height: 400px;" alt="bracelet" class="zoom">
+
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuEVIQONObvGkKiLoj055ogSif_oM-7PR20Q&s" style="width: 300px; height: 400px;" alt="necklace" class="zoom">
+
+		<img src="https://kezani.com.au/cdn/shop/products/wedding-earrings-simple-crystal-and-pearl-drop-earring-twinkle-pearl-by-stephanie-browne-at-kezani-4.jpg?v=1695860993" style="width: 300px; height: 400px;" alt="necklace" class="zoom">
+		
+
+	</div>
+
+</fieldset>
+
+<br>
+
+<fieldset class="pearl">
+	<h1 class="prl" style="color:white"> DIAMOND SECTION </h1>
+	<br>
+	<div class="image-container">
+	
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNknYiAyUeLx3fP402H_DpBKESu5YOgdXBBw&s" style="width: 300px; height: 380px;" alt="brooch" class="zoom">
+				
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgeHybtPtVhT462Zi84FBMoMXiII7QwgEyrA&s" style="width: 300px; height: 380px;" alt="bracelet" class="zoom">
+			
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOkmCZnjpHzub5ZRKeiRJaqUxBNkrmPs2SPt2lo1IFEoxxlNy_hD0i2YtsGUdvNLvQVAM&usqp=CAU" style="width: 300px; height: 380px;" alt="necklace" class="zoom">
+
+		<img src="https://media.karousell.com/media/photos/products/2024/5/11/diamond_earring_1715394336_70801e53.jpg" style="width: 300px; height: 380px;" alt="necklace" class="zoom">
+				
+	</div>
+</fieldset>
+<br>
+<fieldset class="footer" id="services">
+	<p class="srv"> OUR SERVICES</p>
+	<ul class="service-list">
+		<li> Made to Order </li>
+		<li> Repair/Hinang </li>
+		<li> Tubog </li>
+		<li> Electroplating </li>
+		<li> Stone setting </li>
+		<li> Resize </li>
+		<li> Engraving </li>
+	</ul>
+</fieldset>
+</body>
+
+
+</html>
